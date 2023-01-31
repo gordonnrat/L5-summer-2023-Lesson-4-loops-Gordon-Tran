@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'dk_crayon_crumbleregular';
+    src: url('fonts/dkcrayoncrumble-ddll-webfont.woff2') format('woff2'),
+         url('fonts/dkcrayoncrumble-ddll-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    background-color: darkslategray;
+    font-family: 'dk_crayon_crumbleregular', cursive;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+main {
+    box-sizing: border-box;
+    margin: 2%;
+    padding: 2%;
+    border: 10px outset burlywood;
+    background-color: black;
+    border-radius: 40px;
+}
+
+div.math {
+    text-align: left;
+    box-sizing: border-box;
+}
+
+@media (min-width: 900px){
+    div.math {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0;
+        width: 40%;
+    }
+}
