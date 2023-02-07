@@ -43,7 +43,17 @@
          2. Inside the while loop, make sum += to counterNum plus itself.
          3. After the loop is finished, show the sum total of the numbers. */
 
-
+        const count = document.querySelector('#count');
+        let counterNum = 1;
+        let sum = 0;
+        
+        while (counterNum <= 10) {
+            count.innerHTML += counterNum + '<br />';
+            sum = sum + counterNum;
+            counterNum++;
+           
+        }
+        count.innerHTML += 'Total: ' + sum;
 
 
 
@@ -55,10 +65,10 @@
         1. Select the multiply p tag and assign it a variable.
         2. Create a variable to keep count of the number of times the code will be repeated. 
         3. Create a variable for the number to be multiplied. 
-        4. Create the do while loop. The do statement should only have 2 lines of code inside, one to perform the math calculation and show it on the page, one to incement the counter.
+        4. Create the do while loop. The do statement should only have 2 lines of code inside, one to perform the math calculation and show it on the page, one to increment the counter.
         Use innerHTML and the line break tag <br /> when showing each calculation.
         The while condition should set to repeat up to 10. */
-     
+
 
 
 
@@ -72,11 +82,11 @@
         2. Create a for loop that repeats the line 100 times and show it on the page. Try including the iterationa variable so that your lines are numbered. */
         /* Exercise 5
         3. Practice the continue statement by stating "My hand is tired" at line 50 in the for loop. 
-        Use a conditional statement to check the value of your interation variable, then insert the text and continue. */
+        Use a conditional statement to check the value of your iteration variable, then insert the text and continue. */
         /* Exercise 6
         4. Practice the break statement by stopping the for loop at line 75. 
-         Use a conditional statement to check the value of your interation variable, then insert the text "I couldn't finish" and break.*/
-  
+         Use a conditional statement to check the value of your iteration variable, then insert the text "I couldn't finish" and break.*/
+
 
 
 
