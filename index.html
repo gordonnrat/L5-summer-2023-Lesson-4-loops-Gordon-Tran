@@ -37,27 +37,37 @@
          4. Inside the loop, set the innerHTML of the p tag to show counterNum. 
             Make cumulative with +=
             Don't forget to increment counterNum! */
-        /* Exercise 2
-        Show the sum total of the numbers between 1 and 10.
-         1. Above the while loop you just created, make a variable called sum and set it to 0;
-         2. Inside the while loop, make sum += to counterNum plus itself.
+            /* Exercise 2
+            Show the sum total of the numbers between 1 and 10.
+            1. Above the while loop you just created, make a variable called sum and set it to 0;
+            2. Inside the while loop, make sum += to counterNum plus itself.
          3. After the loop is finished, show the sum total of the numbers. */
-
-        const count = document.querySelector('#count');
-        let counterNum = 1;
-        let sum = 0;
-        
-        while (counterNum <= 10) {
-            count.innerHTML += counterNum + '<br />';
-            sum = sum + counterNum;
-            counterNum++;
-           
-        }
-        count.innerHTML += 'Total: ' + sum;
-
-
-
-
+         
+         // const count = document.querySelector('#count');
+         // let counterNum = 1;
+         // let sum = 0;
+         
+         // while (counterNum <= 10) {
+             //     count.innerHTML += counterNum + '<br />';
+             //     sum = sum + counterNum;
+             //     counterNum++;
+             
+             // }
+             // count.innerHTML += 'Total: ' + sum;
+             
+             const count = document.querySelector('#count');
+             let counterNum = 1;
+             let sum = 0;
+             while (counterNum <= 10) {
+                 count.innerHTML += counterNum + '<br />';
+                 sum += counterNum;
+                 counterNum++;
+             }
+             count.innerHTML += 'Total: ' + sum + '<br />';
+             
+             
+             
+             
 
 
         /* Exercise 3  do while loop
@@ -69,9 +79,13 @@
         Use innerHTML and the line break tag <br /> when showing each calculation.
         The while condition should set to repeat up to 10. */
 
-
-
-
+        const multiply = document.querySelector('#multiply');
+        let counterProd = 1;
+        let baseNum = 3;
+        do {
+            multiply.innerHTML += `${baseNum} x ${counterProd} = ${baseNum * counterProd} <br />`;
+            counterProd++;
+        } while (counterProd <= 10);
 
 
 
@@ -81,13 +95,24 @@
         1. Select the naughty p tag and assign it a variable
         2. Create a for loop that repeats the line 100 times and show it on the page. Try including the iterationa variable so that your lines are numbered. */
         /* Exercise 5
-        3. Practice the continue statement by stating "My hand is tired" at line 50 in the for loop. 
+        // 3. Practice the continue statement by stating "My hand is tired" at line 50 in the for loop. 
         Use a conditional statement to check the value of your iteration variable, then insert the text and continue. */
         /* Exercise 6
         4. Practice the break statement by stopping the for loop at line 75. 
          Use a conditional statement to check the value of your iteration variable, then insert the text "I couldn't finish" and break.*/
 
-
+        const naughty = document.querySelector('#naughty');
+        for (let i = 1; i <= 100; i++) {
+            if(i === 50) {
+                naughty.innerHTML += "My hand is tired <br />";
+                continue;
+            }
+            naughty.innerHTML += `${i}. I will not stick my chewing gum under my desk. <br />`
+            if(i === 75) {
+                naughty.innerHTML += "I couldn't finish <br />"
+                break;
+            }
+        };
 
 
 
